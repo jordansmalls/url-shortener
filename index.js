@@ -19,7 +19,7 @@ const PORT = process.env.PORT || 8000;
 let FRONTEND_LINK = "";
 const app = e();
 
-if (process.env.NODE_ENV == "prduction") {
+if (process.env.NODE_ENV == "production") {
   // minimal logging in prod
   app.use(morgan("tiny"));
   FRONTEND_LINK = process.env.FRONTEND_LINK;
